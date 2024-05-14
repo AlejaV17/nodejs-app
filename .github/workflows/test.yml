@@ -5,9 +5,21 @@ on :
         branches:
         - "main"
 
+
+env: 
+    USER_REPOSITORY: Alejandra
+
 jobs: 
     test_ads:
         runs-on: ubuntu-20.04
         steps: 
             - name: Show message
               run: echo "Hello world 2024-05-14"
+
+            - name: Show secret
+              run: echo ${{secrets.ENVIROMENT }}
+
+            - name: Show variable in file
+             run: echo ${{env.USER_REPOSITORY}}
+            - name: Show variable GITHUB
+              run: echo ${{vars.VERSION}} 
