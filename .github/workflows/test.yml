@@ -23,7 +23,7 @@ jobs:
               run: echo ${{env.USER_REPOSITORY}}
 
             - name: Show variable GITHUB
-              run: echo ${{vars.VERSION}} 
+              run: echo ${{vars.ADS}} 
 
             - name: Setup node
               uses: actions/setup-node@v4
