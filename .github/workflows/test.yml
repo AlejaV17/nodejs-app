@@ -20,7 +20,7 @@ jobs:
               run: echo ${{secrets.ENVIROMENT }}
 
             - name: Show variable in file
-             run: echo ${{env.USER_REPOSITORY}}
+              run: echo ${{env.USER_REPOSITORY}}
 
             - name: Show variable GITHUB
               run: echo ${{vars.VERSION}} 
